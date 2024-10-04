@@ -1,0 +1,45 @@
+/* body{
+    background-color: lightgoldenrodyellow;
+}
+
+div{
+    background-color: lightgreen;
+}
+
+.container{
+    background-color: lightpink;
+    height: 300px;
+    width: 300px;
+    border: 2px solid lightslategray;
+    margin-top: 50px;
+    margin-left: 300px;
+    padding-top: 100px;
+    padding-left: 100px;
+    box-sizing: bord;
+}
+
+.child1{
+    background-color: lightcyan;
+    border: 1px dotted black;
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: blue;
+} */
+
+/* div> p{
+    background-color: lightpink;
+}
+
+div + p{
+    background-color: lightsalmon;
+} */
+
+.containerClass{
+    background-color: lightcoral;
+}
+
+#containerID{
+    background-color: lightseagreen;
+}
