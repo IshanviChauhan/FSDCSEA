@@ -28,11 +28,11 @@ div{
     color: blue;
 } */
 
-/* div> p{
+/* div> p{     Descendent element
     background-color: lightpink;
 }
 
-div + p{
+div + p{        Adjacent element
     background-color: lightsalmon;
 } */
 

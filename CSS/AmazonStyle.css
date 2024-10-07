@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    border: 0;
+    font-family: "Amazon Ember", Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: #0F1111;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 129px;
+}
+nav .logo img{
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+nav .pincode{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+nav .pincode .line1{
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 0;
+}
+nav .pincode .line2 span{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 123px;
+    margin-left: 0;
+}
+
+nav .search{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+nav .search select{
+    height: 40px;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+nav .search input{
+    height: 40px;
+    width: 450px;
+}
+nav .search button{
+    height: 40px;
+    width: 50px;
+    font-size: 27px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(255, 190, 85);
+    cursor: pointer;
+}
+nav .search button:hover{
+    background-color: rgb(255, 177, 51);
+}
+nav .search button i{
+    margin-top: 4px;
+    color: rgb(74, 74, 74);
+}
+nav .language{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer
+}
+nav .language img{
+    height: 20px;
+    margin-left: 10px;
+}
+nav .language p{
+    font-weight: bolder;
+    font-size: 14px;
+}
+nav .language p i{
+    margin-left: 2px;
+    font-size: 7px;
+    color: rgb(180, 180, 180);
+}
+nav .language:hover .dropdown {
+    display: block;
+}
+nav .language .dropdown{
+    display: none;
+    position: absolute;
+    max-width: 100px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+nav .account p{
+    font-size: 12px;
+}
+nav .account p span{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 123px;
+}
+nav .account p i{
+    margin-left: 2px;
+    font-size: 7px;
+    color: rgb(180, 180, 180);
+}
+
+nav .order p{
+    font-size: 12px;
+}
+nav .order p span{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 123px;
+    margin-left: 0;
+}
+
+nav .cart{
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+nav .cart i{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+nav .cart p{
+    align-items: baseline;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
