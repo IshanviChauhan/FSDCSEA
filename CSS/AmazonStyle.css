@@ -219,9 +219,9 @@ header{
     width: 270px;
     height: 350px;
 }
-.offerCards .card1 p{
+.offerCards .card1 p, .offerCards .card2 p, .offerCards .card3 p{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 20px 0 10px 15px;
 }
 .offerCards .card1 .images{
@@ -229,6 +229,7 @@ header{
     grid-template-columns: repeat(2,0fr);
     grid-template-rows: repeat(2,0fr);
     justify-content: center;
+    margin-bottom: 15px;
 }
 .offerCards .card1 .images img{
     width: 115px;
@@ -248,15 +249,55 @@ header{
     color: #007185;
     padding-left: 15px;
 }
-.offerCards .card2{
-    grid-column: 4/6;
-    grid-row: 4/5;
+
+.offerCards .card2 .images{
+    display: flex;
+    height: 220px;
+    width: 270px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
-.offerCards .card3{
-    grid-column: 7/9;
-    grid-row: 4/5;
+.offerCards .card2 .images .imagebox{
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    margin: 0 20px 0 20px;
+    width: 230px;
+    overflow: hidden;
 }
-.offerCards .card4{
-    grid-column: 10/12;
-    grid-row: 4/5;
+.offerCards .card2 .images .imagebox img{
+    height: 220px;
+}
+.offerCards .card2 a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #007185;
+    padding-left: 15px;
+}
+
+.offerCards .card3 .images{
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    grid-template-rows: repeat(2,0fr);
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.offerCards .card3 .images img{
+    width: 115px;
+    margin: 5px;
+}
+.offerCards .card3 .images p{
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: -7px;
+    margin-left: 4px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.offerCards .card3 a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #007185;
+    padding-left: 15px;
 }
