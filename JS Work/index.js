@@ -83,9 +83,9 @@
 // console.log(document)
 // console.dir(document);
 // const div = document.getElementsByClassName("parent");
-// // console.dir(parent);
-// // console.log(parent[0]);
-// // parent[0].innerText = "Hello, Full Stack";
+// console.dir(div);
+// console.log(div[0]);
+// div[0].innerText = "Hello, Full Stack";
 // div[0].innerHTML = "<h1 style=color:purple>Hello, Full Stack</h1>";
 // const h1 = document.createElement("h1");
 // h1.innerText="Element is created by DOM function"
@@ -156,3 +156,25 @@
 // );
 // promise3.then((data)=>{console.log(data,data.name,data.branch)})
 // .catch(error=>{console.log(error)});
+
+//Fetch API
+const div = document.getElementById("disp");
+let arr = [];
+const response = fetch("https://dummyjson.com/products");
+response.then(data=>{
+    console.log(data);
+    data.json().then(res=>{
+        // console.log(res)
+        // console.log(res.products[0].id + " " + res.products[0].title)
+        for(let i=0; i<res.products.length; i++)
+        {
+            arr.push(res.products[i].title);
+        }
+    });
+});
+for(let i=0; i<arr.length; i++)
+{
+    div[0].innerHTML = arr[i];
+    const ele = document.createElement('h1');
+    div[0].appendChild(ele);
+}
