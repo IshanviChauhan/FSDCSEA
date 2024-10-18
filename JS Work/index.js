@@ -82,9 +82,21 @@
 // console.log("Hello, JS");
 // console.log(document)
 // console.dir(document);
-// let parent = document.getElementsByClassName("parent");
-// console.dir(parent);
-// console.log(parent[0]);
-// parent[0].innerText = "Hello, Full Stack";
-// parent[0].innerHTML = "<h1 style=color:purple>Hello, Full Stack</h1>";
+// const div = document.getElementsByClassName("parent");
+// // console.dir(parent);
+// // console.log(parent[0]);
+// // parent[0].innerText = "Hello, Full Stack";
+// div[0].innerHTML = "<h1 style=color:purple>Hello, Full Stack</h1>";
+// const h1 = document.createElement("h1");
+// h1.innerText="Element is created by DOM function"
+// h1.style.backgroundColor = "lightcyan"
+// div[0].appendChild(h1);
+// console.log(h1);
 
+// const img = document.createElement('img');
+// img.src = 'Cat.jpeg';
+// img.setAttribute("height","200px");
+// console.log(img);
+// div[0].appendChild(img);
+
+// div[0].removeChild(img);
