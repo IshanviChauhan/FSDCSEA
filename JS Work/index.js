@@ -79,9 +79,11 @@
 // }
 // console.log(selectLanguage('Java'));
 
-console.log("Hello, JS");
-console.dir(document);
-let parent = document.getElementsByClassName("parent");
-console.dir(parent);
-console.log(parent[0]);
-parent[0].innerText = "Hello, Full Stack";
+// console.log("Hello, JS");
+// console.log(document)
+// console.dir(document);
+// let parent = document.getElementsByClassName("parent");
+// console.dir(parent);
+// console.log(parent[0]);
+// parent[0].innerText = "Hello, Full Stack";
+
