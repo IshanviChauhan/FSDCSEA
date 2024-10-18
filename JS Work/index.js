@@ -101,13 +101,19 @@
 
 // div[0].removeChild(img);
 
-const button = document.getElementById("btn");
-console.log(button);
-const display = document.getElementById("disp");
-console.log(display);
-function getData(){
-    console.log("Calling getData function");
-    display.innerHTML = "<h3 style=color:lightcoral>Welcome to CSE Department</h3>";
-}
+// const button = document.getElementById("btn");
+// console.log(button);
+// const display = document.getElementById("disp");
+// console.log(display);
+// function getData(){
+//     console.log("Calling getData function");
+//     display.innerHTML = "<h3 style=color:lightcoral>Welcome to CSE Department</h3>";
+// }
 
-button.addEventListener("click",getData);
+//Arrow function
+// getData=()=>{
+//     console.log("Calling getData function");
+//     display.innerHTML = "<h3 style=color:lightcoral>Welcome to CSE Department</h3>";
+// }
+
+// button.addEventListener("click",getData);
