@@ -86,4 +86,5 @@
 // console.dir(parent);
 // console.log(parent[0]);
 // parent[0].innerText = "Hello, Full Stack";
+// parent[0].innerHTML = "<h1 style=color:purple>Hello, Full Stack</h1>";
 
