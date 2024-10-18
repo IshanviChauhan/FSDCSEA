@@ -117,3 +117,42 @@
 // }
 
 // button.addEventListener("click",getData);
+
+// const promise1 = new Promise(
+//     (resolve,reject) => {
+//         let A = 16;
+//         if(A>10){
+//             resolve("Value of A is resolved");
+//         }
+//         else{
+//             reject("A is rejected");
+//         }
+//     }
+// );
+
+// promise1.then((msg)=>{console.log(msg)})
+// .catch(error=>{console.log(error)})
+// .finally(msg=>{console.log("All resources have been closed")});
+
+// const promise2 = new Promise(
+//     (resolve,reject) => {
+//         const randomNumber = parseInt(Math.random() * 1000);
+//         if(randomNumber>100 && randomNumber<200){
+//             resolve("Value of Random Number is resolved = "+randomNumber);
+//         }
+//         else{
+//             reject("Random Number is rejected = "+randomNumber);
+//         }
+//     }
+// );
+// promise2.then((msg)=>{console.log(msg)})
+// .catch(error=>{console.log(error)})
+// .finally(msg=>{console.log("All resources have been closed")});
+
+// const promise3 = new Promise(
+//     (resolve,reject)=>{
+//         resolve({name:"Ishanvi", branch:"CSE"});
+//     }
+// );
+// promise3.then((data)=>{console.log(data,data.name,data.branch)})
+// .catch(error=>{console.log(error)});
