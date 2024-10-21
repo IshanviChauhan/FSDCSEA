@@ -158,23 +158,12 @@
 // .catch(error=>{console.log(error)});
 
 //Fetch API
-const div = document.getElementById("disp");
-let arr = [];
-const response = fetch("https://dummyjson.com/products");
-response.then(data=>{
-    console.log(data);
-    data.json().then(res=>{
-        // console.log(res)
-        // console.log(res.products[0].id + " " + res.products[0].title)
-        for(let i=0; i<res.products.length; i++)
-        {
-            arr.push(res.products[i].title);
-        }
-    });
-});
-for(let i=0; i<arr.length; i++)
-{
-    div[0].innerHTML = arr[i];
-    const ele = document.createElement('h1');
-    div[0].appendChild(ele);
-}
+// const response = fetch("https://dummyjson.com/products");
+// response.then(data=>{
+//     console.log(data);
+//     data.json().then(res=>{
+//         console.log(res.products[0].id + " " + res.products[0].title)
+//         const data = res.products[0].id + " " + res.products[0].title;
+//         div[0].innerHTML = data
+//     })
+// })
