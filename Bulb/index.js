@@ -14,6 +14,13 @@ function displayBulb(){
         bulb.setAttribute("height","150px");
         imgBox.appendChild(bulb);
         imgBox.appendChild(checkbox);
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                bulb.src = 'Yellow_Light_Bulb_PNG_Clip_Art-2108.png';
+            } else {
+                bulb.src = 'Light_Bulb_PNG_Clip_Art-2102.png';
+            }
+        });
         container.appendChild(imgBox);
     }
 }
@@ -27,4 +34,3 @@ function quantity(){
 }
 button.addEventListener("click",quantity);
 
-checkbox.addEventListener("change",function())
