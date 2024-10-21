@@ -5,7 +5,7 @@ const imgBox = document.getElementById("imgBox");
 function displayBulb(){
     const textarea = document.getElementsByTagName("textarea");
     const bulbs = textarea[0].value
-    console.log(bulbs);
+    container.innerHTML = '';
     for(let i=0;i<bulbs;i++){
         const bulb = document.createElement("img");
         const checkbox = document.createElement("input");
@@ -27,4 +27,4 @@ function quantity(){
 }
 button.addEventListener("click",quantity);
 
-
+checkbox.addEventListener("change",function())
