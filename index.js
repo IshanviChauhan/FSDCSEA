@@ -5,7 +5,7 @@ const imgBox = document.getElementById("imgBox");
 function displayBulb(){
     const textarea = document.getElementsByTagName("textarea");
     const bulbs = textarea[0].value
-    console.log(bulbs);
+    container.innerHTML = '';
     for(let i=0;i<bulbs;i++){
         const bulb = document.createElement("img");
         const checkbox = document.createElement("input");
@@ -14,6 +14,13 @@ function displayBulb(){
         bulb.setAttribute("height","150px");
         imgBox.appendChild(bulb);
         imgBox.appendChild(checkbox);
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                bulb.src = 'Yellow_Light_Bulb_PNG_Clip_Art-2108.png';
+            } else {
+                bulb.src = 'Light_Bulb_PNG_Clip_Art-2102.png';
+            }
+        });
         container.appendChild(imgBox);
     }
 }
@@ -26,5 +33,4 @@ function quantity(){
     submit.addEventListener("click",displayBulb);
 }
 button.addEventListener("click",quantity);
-
 
