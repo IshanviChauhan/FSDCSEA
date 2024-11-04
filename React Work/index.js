@@ -1,0 +1,11 @@
+const parent = document.getElementById("root");
+console.dir(parent);
+const root = ReactDOM.createRoot(parent);
+const h2 = React.createElement("h2", {style:{color:"blue"}}, "Hello React JS");
+const li1 = React.createElement("li", {}, "Apple");
+const li2 = React.createElement("li", {}, "Orange");
+const ul = React.createElement("ul", {},li1, li2);
+const div = React.createElement("div", {style:{background:"cyan"}}, h2, ul);
+// root.render(h2);
+// root.render(ul);
+root.render(div);
