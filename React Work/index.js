@@ -19,4 +19,12 @@ const li3 = <li>Mango</li>
 const li4 = <li>Banana</li>
 const ul = <ul>{li1}{li2}{li3}{li4}</ul>;
 
-root.render(ul);
+const container = (
+    <div>
+        <div><h2>Welcome to React Application Development</h2></div>
+        <div>{ul}</div>
+        <div>{h21}</div>
+    </div>
+);
+
+root.render(container);
