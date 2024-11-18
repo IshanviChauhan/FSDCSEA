@@ -1,0 +1,71 @@
+App.jsx:
+
+import React from "react";
+import Student from "./Student";
+import defaultPic from "./assets/Cat.jpeg";
+// import logo from './abeslogo.png'
+
+function App() {
+  let a = 12;
+  const mystyle1 = {
+    backgroundColor: "cyan",
+    color: "black",
+    padding: "20px",
+    borderRadius: "7px",
+    fontSize: "17px",
+  };
+  const mystyle2 = {
+    backgroundColor: "purple",
+    color: "white",
+    padding: "10px",
+    margin: "10px",
+    borderRadius: "7px",
+  };
+  const mystyle3 = {
+    backgroundColor: "lightpink",
+    color: "blue",
+    display: "flex",
+    justifyContent: "center",
+    margin: "10px",
+    borderRadius: "7px",
+  };
+  const studentData = [
+    {
+      college: "ABES Engineering College",
+      pic: defaultPic,
+      name: "Ishanvi",
+      roll: "77",
+      branch: "CSE",
+      section: "A",
+    },
+    {
+      college: "ABES Engineering College",
+      pic: defaultPic,
+      name: "ABC",
+      roll: "77",
+      branch: "CSE",
+      section: "A",
+    },
+  ];
+  return (
+    <div style={mystyle1}>
+      ABES Engineering College
+      <div style={mystyle2}>{a}</div>
+      <div style={mystyle3}>
+        <Student data={studentData[1]} />
+        {/* <Student college="ABES ENGINEERING COLLEGE" 
+        pic={<img src={logo} width={50}/>}
+        name="Ishanvi" roll="77" branch="CSE" section="A"/>
+        
+        <Student college="ABES ENGINEERING COLLEGE" 
+        pic={<img src={logo} width={50}/>}
+        name="Jagrati" roll="78" branch="CSE" section="A"/>
+
+        <Student 
+        name="Jalaj" roll="79" branch="CSE" section="A"/> */}
+      </div>
+    </div>
+  );
+}
+
+export default App;

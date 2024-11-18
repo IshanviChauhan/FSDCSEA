@@ -1,21 +1,47 @@
-import React from 'react'
-import './student.css'
-function Student(props){
+import React from "react";
+import "./student.css";
+// import defaultPic from './assets/Cat.jpeg';
+function Student({ data }) {
   return (
-    <div className='icard'>
-        <table>
-            <tbody>
-                <tr style={{backgroundColor:'lavender'}}>
-                    <td colSpan={2}>{props.college}</td>
-                </tr>
-                <tr><td>Name: </td><td>{props.name}</td></tr>
-                <tr><td>Roll_Number: </td><td>{props.roll}</td></tr>
-                <tr><td>Branch: </td><td>{props.branch}</td></tr>
-                <tr><td>Section: </td><td>{props.section}</td></tr>
-            </tbody>
-        </table>
+    <div className="icard">
+      {/* {
+        JSON.stringify(data)
+      } */}
+      <table>
+        <tbody>
+          <tr style={{ backgroundColor: "lavender" }}>
+            <td colSpan={2}>{data.college}</td>
+          </tr>
+          <tr>
+            <td colSpan={2}>
+              <img src={data.pic} width={100} />
+            </td>
+          </tr>
+          <tr>
+            <td>Name: </td>
+            <td>{data.name}</td>
+          </tr>
+          <tr>
+            <td>Roll_Number: </td>
+            <td>{data.roll}</td>
+          </tr>
+          <tr>
+            <td>Branch: </td>
+            <td>{data.branch}</td>
+          </tr>
+          <tr>
+            <td>Section: </td>
+            <td>{data.section}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Student
+// Student.defaultProps = {
+//   college: 'AKG ENGINEERING COLLEGE',
+//   pic: <img src={defaultPic} alt="Default" width={50} />
+// };
+
+export default Student;
